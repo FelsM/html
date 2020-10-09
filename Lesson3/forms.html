@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+</head>
+<body>
+
+	<form id="registration">
+		<div>
+			<label for="name">Имя</label>
+			<input id="name" type="text" name="name" placeholder="Имя" required>
+		</div>
+		
+		<div>
+			<label for="email">Email</label>
+			<input id="email" type="email" name="email"  required>
+		</div>
+
+		<div>
+			<label for="password">Password</label>
+			<input id="password" type="password" name="password">
+		</div>
+		
+		<div>
+			<label for="phone">Телефон</label>
+			<input id="phone" type="tel" name="phone">
+		</div>
+
+		
+		<div>
+			<h4>Пол</h4>
+
+			<label for="man">Мужчина</label>
+			<input type="radio" id="man" name="gender">
+
+			<label for="woman">Женщина</label>
+			<input type="radio" id="woman" name="gender">
+
+			<label for="unknown">Не указан</label>
+			<input type="radio" id="unknown" name="gender">	
+		</div>
+
+		<div>
+			<h4>Увлечения</h4>
+			<label for="sport">Спорт</label>
+			<input type="checkbox" id="sport" name="interess">
+			<label for="art">Живопись</label>
+			<input type="checkbox" id="art" name="interess">
+			<label for="cinematography">Кино</label>
+			<input type="checkbox" id="cinematography" name="interess">
+		</div>
+
+		<div>
+			<label for="birth">Дата рождения</label>
+			<input type="date" id="birth" name="birth">
+		</div>
+
+		<div>
+			<label for="color">Цвет глаз</label>
+			<input type="color" id="color" name="color">
+		</div>
+
+		<div>
+			<label for="time">Время рождения</label>
+			<input type="time" id="time" name="time">
+		</div>
+
+		<div>
+			<label for="summary">О себе</label>
+			<textarea name="summary" id="summary" cols="5" rows="10"></textarea>
+		</div>
+
+		<div>
+			<label for="gender2">Пол</label>
+			<select name="gender2" id="gender2">
+				<option value="0">Мужчина</option>
+				<option value="1">Женщина</option>
+				<option value="2" selected>Не указан</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="gender3">Пол</label>
+			<input list="gender3" name="gender3">
+			<datalist id="gender3">
+				<option value="0">
+				<option value="1">
+				<option value="2">
+			</datalist> 
+		</div>
+
+		<div>
+			<label for="place">Ваш город</label>
+			<select name="place" id="place">
+				<optgroup label="Украина">
+					<option value="0">Киев</option>
+					<option value="1" selected>Львов</option>
+				</optgroup>
+				<optgroup label="Польша">
+					<option value="3">Краков</option>
+					<option value="4">Варшава</option>
+				</optgroup>
+			</select>
+		</div>
+
+		<div>
+			<label for="range">Колличество</label>
+			<input name="range" type="range" step="2" min="0" max="8">
+		</div>
+
+		<div>
+			<label for="file">Аватар</label>
+			<input name="file" type="file">
+		</div>
+
+
+		<input type="button" value="Кнопка">
+
+
+		
+		<input type="submit" value="Отправить">
+		<input type="reset" value="Сбросить">
+	</form>
+
+	<form action="">
+		<input type="text" placeholder="smth">
+	</form>	
+	
+
+	<br>
+
+	
+
+
+</body>
+</html>
